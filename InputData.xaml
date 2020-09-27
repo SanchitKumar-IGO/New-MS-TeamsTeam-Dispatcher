@@ -97,7 +97,7 @@
           <av:PointCollection x:Key="ConnectorLocation">300,304.666666666667 300,356.666666666667</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Assign Team Owners" sap:VirtualizedContainerService.HintSize="418,368.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+      <Sequence DisplayName="Assign Team Owners" sap:VirtualizedContainerService.HintSize="200,69.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -196,7 +196,7 @@
                           <av:PointCollection x:Key="ConnectorLocation">530,604.666666666667 530,634.666666666667 270,634.666666666667 270,666.666666666667</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Sequence DisplayName="Assign Team Members" sap:VirtualizedContainerService.HintSize="200,69.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                      <Sequence DisplayName="Assign Team Members" sap:VirtualizedContainerService.HintSize="518,516" sap2010:WorkflowViewState.IdRef="Sequence_10">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -294,7 +294,7 @@
                                           <av:Size x:Key="ShapeSize">200,69.3333333333333</av:Size>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <Sequence DisplayName="Final Write Lines" sap:VirtualizedContainerService.HintSize="380,676" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                      <Sequence DisplayName="Final Write Lines" sap:VirtualizedContainerService.HintSize="200,69.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_17">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -463,7 +463,7 @@
           <av:PointCollection x:Key="ConnectorLocation">300,184.666666666667 300,235.333333333333</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Teams Name" sap:VirtualizedContainerService.HintSize="200,69.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence DisplayName="Teams Name" sap:VirtualizedContainerService.HintSize="376,348.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -475,7 +475,7 @@
           </ui:InputDialog.Result>
         </ui:InputDialog>
         <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;Teams Name: &quot; + out_TeamsName]" />
-        <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="[in_ADCreds]" DisplayName="Get Admin Credential" FolderPath="Default" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="GetRobotCredential_2" Password="[ADPassword]" Username="[ADUsername]" />
+        <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="[in_ADCreds]" DisplayName="Get Admin Credential" FolderPath="HelpDesk" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="GetRobotCredential_2" Password="[ADPassword]" Username="[ADUsername]" />
       </Sequence>
       <FlowStep.Next>
         <x:Reference>__ReferenceID0</x:Reference>
